@@ -1,0 +1,25 @@
+class Place {
+    public static void main(String args[]){
+        int[] arr = {10, 20, 45, 49, 3};
+        
+        
+        int largest = arr[0]; //10
+        int second_largest = arr[0];
+        
+        for(int i = 0; i < arr.length; i++){
+            int current = arr[i];
+            if (current > largest){ // 20  > 10
+                second_largest = largest; // 10
+                largest = current; // 20
+            }
+            
+            else if(current > second_largest){ // 45 > 20 
+                second_largest = current;
+                
+            }
+        }
+        System.out.println(second_largest);
+        
+        
+    }
+}
