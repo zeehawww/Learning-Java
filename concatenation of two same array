@@ -1,0 +1,15 @@
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+
+        int[] duplicate = nums.clone();
+        
+        int[] combined = new int[nums.length + duplicate.length];
+        
+        System.arraycopy(nums, 0, combined, 0, nums.length);
+        System.arraycopy(duplicate, 0, combined, nums.length, duplicate.length);
+        for (int num : combined) {
+            return combined;
+        }
+        return combined;
+    }
+}
